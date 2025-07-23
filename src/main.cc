@@ -170,17 +170,29 @@ void RenderSpectrum(ImDrawList* draw_list, const ImRect& rect, RtWinAudio& rtAud
             }
         }
     }
-
-    for (UINT32 i = 0; rtAudioData.mNumFrames > i; ++i)
+    
+    for (int fg = 0; 1 >= fg; ++fg)
     {
-        float z = sqrtf(rtAudioData.mFFT_out[i].r * rtAudioData.mFFT_out[i].r + rtAudioData.mFFT_out[i].i * rtAudioData.mFFT_out[i].i);
-        z *= scale.y;
+        float x = pos.x;
 
-        draw_list->AddRectFilled({ pos.x - scale.x, pos.y - z - 1.f }, { pos.x + scale.x + scale.x + 1.f, pos.y }, IM_COL32(50, 0, 125, 255));
-        draw_list->AddRectFilled({ pos.x + scale.x, pos.y - z }, { pos.x + scale.x + scale.x, pos.y }, IM_COL32(255, 0, 125, 255));
-        draw_list->AddRectFilled({ pos.x, pos.y - z }, { pos.x + scale.x, pos.y }, IM_COL32(125, 0, 255, 255));
+        for (UINT32 i = 0; rtAudioData.mNumFrames > i; ++i)
+        {
+            float z = sqrtf(rtAudioData.mFFT_out[i].r * rtAudioData.mFFT_out[i].r + rtAudioData.mFFT_out[i].i * rtAudioData.mFFT_out[i].i);
+            z *= scale.y;
 
-        pos.x += scale.x;
+            if (fg) {
+                draw_list->AddRectFilled({ pos.x, pos.y - z }, { pos.x + scale.x, pos.y }, IM_COL32(125, 0, 255, 255));
+            }
+            else
+            {
+                draw_list->AddRectFilled({ pos.x - scale.x, pos.y - z - 1.f }, { pos.x + scale.x + scale.x + 1.f, pos.y }, IM_COL32(50, 0, 125, 255));
+                draw_list->AddRectFilled({ pos.x + scale.x, pos.y - z }, { pos.x + scale.x + scale.x, pos.y }, IM_COL32(255, 0, 125, 255));
+            }
+
+            pos.x += scale.x;
+        }
+
+        pos.x = x;
     }
 }
 
