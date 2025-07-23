@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Project Files\contrib">
+      <UniqueIdentifier>{e2fa6ce4-c247-4986-ba70-65f67885ad53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project Files\contrib\imgui">
+      <UniqueIdentifier>{facf1f06-b5e4-4ebf-bc1c-79d282a7e1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project Files\contrib\kissfft">
+      <UniqueIdentifier>{eb85b044-8f91-4b58-8dc5-dd6f9287b6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project Files\include">
+      <UniqueIdentifier>{d64e5a77-5a89-4f85-bf31-10479091fefb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cc">
+      <Filter>Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\imgui\imgui.cpp">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\imgui\imgui_draw.cpp">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\imgui\imgui_impl_dx11.cpp">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\imgui\imgui_impl_win32.cpp">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\imgui\imgui_tables.cpp">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\imgui\imgui_widgets.cpp">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\kissfft\kiss_fft.c">
+      <Filter>Project Files\contrib\kissfft</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="contrib\imgui\imconfig.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imgui.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imgui_impl_dx11.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imgui_impl_win32.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imgui_internal.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imstb_rectpack.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imstb_textedit.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\imgui\imstb_truetype.h">
+      <Filter>Project Files\contrib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\kissfft\_kiss_fft_guts.h">
+      <Filter>Project Files\contrib\kissfft</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\kissfft\kiss_fft.h">
+      <Filter>Project Files\contrib\kissfft</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\kissfft\kiss_fft_log.h">
+      <Filter>Project Files\contrib\kissfft</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rtwinaudio.hh">
+      <Filter>Project Files\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
